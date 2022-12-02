@@ -5,7 +5,7 @@
 # - [2, 3, 5, 6] => [12,15]   ( [2*6, 3*5]) 
 
 l = list(map(int, input("Введите числа через пробел: ").split()))
-product = {}
+product = []
 for i in range(0, (len(l) + 1) // 2):
-    product[i] = l[i] * l[-1 - i]
+    product.append(l[i] * l[-1 - i])
 print(product)
